@@ -1,0 +1,28 @@
+import sys
+import numpy as np
+sys.path.append('C:/Users/86196/Desktop/OLPS-P/Datatrans')
+from datatrans import dataset
+djia=dataset('djia').prices()
+import heapq
+import math
+import matplotlib.pyplot as plt
+import pandas as pd
+import itertools
+
+# markers=itertools.cycle(['+','*',',','o','.','s','p','P','h','H','x','X','d','D','1','2','3','4','8'])
+# tp=np.ones([2,5])
+# tp[0][1]=0
+# tp[1][0]=3
+# fig=plt.figure()
+# fig.subplots_adjust(bottom=0.2)
+# ax1=fig.add_subplot(2,2,3)
+# ax2=fig.add_subplot(2,2,4)
+# aplt=pd.DataFrame(tp.T,columns=['xx','yy'])
+# bplt=pd.DataFrame(tp.T)
+# plt.rcParams['font.sans-serif']='SimHei'
+# aplt.plot(ax=ax1,yticks=[1,10,100],xlim=(0,4),xticks=[0,2,4],marker=next(markers))
+# bplt.plot(ax=ax2,yticks=[0.1,1,10],xlim=(0,4),xticks=range(0,5,2))
+# ax1.legend(loc='lower center', bbox_to_anchor=(1,-0.5),borderaxespad=0,ncol=2) 
+# plt.show()
+l=[for i in range(0,6,2)]+[5]
+print(l)
